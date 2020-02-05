@@ -4,6 +4,7 @@
     android:layout_height="fill_parent"
     android:paddingLeft="20dp"
     android:paddingRight="20dp"
+    android:background="@color/colorAppBackground"
     android:orientation="vertical">
 
     <View
@@ -19,8 +20,13 @@
         android:layout_weight="2"
         android:textAllCaps="true"
         android:text="@string/app_description"
+        android:textColor="@color/colorTitle"
         android:textSize="28sp"
         />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider" />
 
     <EditText
         android:id="@+id/numberET"
@@ -29,6 +35,7 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
+        android:textCursorDrawable="@drawable/color_cursor"
         android:layout_weight="1"
         android:textSize="28sp"/>
 
@@ -40,12 +47,13 @@
         android:layout_weight="1"
         android:layout_margin="30dp"
         android:textSize="40sp"
+        android:textColor="@color/colorButtonTotal"
         />
 
     <View
-        android:id="@+id/divider"
         android:layout_width="match_parent"
         android:layout_height="1dp"
+        android:layout_marginBottom="20dp"
         android:background="?android:attr/listDivider" />
 
     <ProgressBar
@@ -53,7 +61,7 @@
         style="@android:style/Widget.ProgressBar.Horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#ffffff"
+        android:progressDrawable="@drawable/progress_style"
         android:max="100"/>
 
     <TextView
@@ -67,7 +75,9 @@
         android:layout_height="wrap_content"
         android:gravity="end"
         android:layout_weight="2"
-        android:textSize="45sp"/>
+        android:textSize="45sp"
+        android:textColor="@color/colorButtonTotal"
+        />
     <View
         android:layout_width="match_parent"
         android:layout_height="0dp"
