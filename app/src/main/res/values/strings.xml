@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">ProgressBar</string>
+    <string name="app_description">Factorial Number Calculation</string>
+    <string name="button_name">Start</string>
+    <string name="placeholder_ET">Put Number To Calculate</string>
+</resources>
